@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Registration</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/boostrap.min.css"/>
+    <style>
+        .h-500{height:450px;
+        width:100%}
+        .ah-500{height:650px;
+        width:100%}
+        .my-caption{
+            background-color: rgba(0, 0, 0, 0.5);
+            bottom: 100px;
+        }
+
+        .min-h-300{
+            min-height: 300px;
+        }       
+
+  </style>
+</head>
+<body>
+<section class="py-2" style="background-color: rgb(199, 191, 204);  background-image: url(assets/img/image/img/td.png);">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 ">
+					<div class="row">
+						<div class="col-md-2 text-center">
+							<a href="#"><i class="px-4"><img src="assets/img/image/img/2.png" style="height: 130px;width: 130px;border-radius: 50%;padding: 5px;"/></i></a>
+						</div>
+						<div class="col-md-6 text-center">
+							<h1  style="color: rgba(255, 255, 255, 0.973); font-size: 50px;">Ideal Coaching Center</h1>
+						</div>
+						<div class="col-md-4 text-center  text-white">					
+							<a href="#"><i class=""><img src="assets/img/image/img/w.png" height="46"width="54" style="padding-left: 5px;"/></i></a>+990147845
+						</div>
+					</div>
+			</div>
+			
+		</div>
+			
+	</section>
+    
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ml-0" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item "><a class="nav-link" href="index.html">Home </a></li>
+                    <li class="nav-item "><a class="nav-link" href="about.html">About </a></li>
+                    <li class="nav-item "><a class="nav-link" href="contact.html">Contact </a></li>
+                    <li class="nav-item "><a class="nav-link" href="login.html">Login </a></li>
+                    <li class="nav-item "><a class="nav-link" href="signup.html">Sign Up </a></li>
+					<li class="nav-item "><a class="nav-link" href="registration.html">Registration </a></li>
+            </ul>
+            <form class="form-inline ml-5 my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+	
+	
+	
+	
+	<!--Main Section Start-->
+	
+	
+	    <div class="container-fluid ">
+      <p class="placeholder-glow">
+        <span class="placeholder col-12"></span>
+      </p>
+    </div>
+    
+    
+      <!--Main Section start-->
+      
+      <section class="py-3 mt-2" style="background-color: rgb(221, 226, 226);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="card border-secondary py-3">
+                        <div class="card-header text-center">
+                            <h1>Join Form</h1>
+                        </div>
+                        <div class="card-body ">
+                            <form action="" method="POST" enctype="multipart/form-data">
+                                <div class="form-group row py-1">
+                                    <label class="col-form-label col-md-4"><strong>First Name :</strong> </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control" id="firstName" onchange="firstNameValidaton()" name="FirstName"placeholder="Enter First Name" required/>
+                                        <p id="firstNameMgs" class="text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="form-group row py-1">
+                                    <label class="col-form-label col-md-4"><strong>Last Name :</strong> </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control" id="lastName" onchange="lastNameValidaton()" name="lastName"placeholder="Enter Last Name" required/>
+                                        <p id="lastNameMgs" class="text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="form-group row py-1">
+                                    <label class="col-form-label col-md-4"><strong>Phone Number :</strong></label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control" id="phone" onchange="phoneValidaton()" onblur="contactLengthCheck()" name="phone" placeholder="Enter Phone Number" required/>
+                                        <p id="phoneMgs" class="text-danger"></p>
+                                        <p id="phoneMgsTwo" class="text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="form-group row py-1">
+                                    <label class="col-form-label col-md-4"><strong>Email :</strong></label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control" id="email" onchange="emailValidation()" name="email"placeholder="Enter Your Email" required/>
+                                        <p id="emailMgs" class="text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="form-group row py-1">
+                                    <label class="col-form-label col-md-4"><strong>Password :</strong></label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control" id="passwordImput" name="password" onchange="checkPasswordValidation()" onblur="passwordInputValidation()" placeholder="Enter Your Password"/>
+                                        <p id="passwordDataMgs" class="d-none text-danger"></p>
+                                        <p id="passwordDataMgsTwo" class="d-none text-danger"></p>
+                                        <p id="congratulateMsg" class="text-success d-none"></p>
+                                    </div>
+                                </div>
+                                <div class="form-group row py-1">
+                                    <label class="col-form-label col-md-4"><strong>Conform Password :</strong></label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control" id="conPasswordInput" name="password" onchange="confirmPasswordValidation()" onblur="passwordInputValidation()" placeholder="Enter Conform Password"/>
+                                        <p id="conPasswordDataMgs" class="text-danger"></p>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="form-group row py-1">
+                                    <label class="col-form-label col-md-4"><strong>Gender :</strong></label>
+                                    <div class="col-md-7">
+                                        <input class="mx-2" type="radio" name="Gender" >Mail
+                                        <input class="mx-2" type="radio" name="Gender" >Female
+                                        <input class="mx-2" type="radio" name="Gender" >Other
+                                    </div>
+                                </div>
+                                <div class="form-group row py-1">
+                                    <label class="col-form-label col-md-4"><strong>Date Of Birth :</strong> </label>
+                                    <div class="col-md-7">
+                                        <input  class="dob" type="date" name="date">
+                                    </div>
+                                </div>
+                                <div class="form-group row py-1">
+                                    <label class="col-form-label col-md-4"><strong>Choose Photo :</strong></label>
+                                    <div class="col-md-8">
+                                        <input onchange="imgValidation()" id="img" type="file" name="Photo">
+                                        <p class="text-danger d-none" id="imgAlart">You can choses Image formate jpg, png, jpeg'</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row py-1">
+                                    <label class="col-form-label col-md-4"><strong>Address :</strong></label>
+                                    <div class="col-md-8">
+                                        <textarea onchange="addressValidation()" id="address" cols="40" rows="2"></textarea>
+                                        <p class="text-danger" id="addressAlart"></p>
+                                    </div>
+                                </div>
+                                <div class="form-group row py-3">
+                                    <label class="col-form-label col-md-8"></label>
+                                    <div class="col-md-4">
+                                        <input onchange="onSubmitConfirmBtn()" type="submit" class="btn btn-outline-light btn-success" name="loginBtn" value="Submit"/>
+                                    </div>
+                                </div>
+                           </form>                              
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+        <!--Main Section end-->
+	
+	
+	
+	
+	
+	<!--Main Section End-->
+	
+	
+
+<!--Footer Section Start-->
+
+<div class="container-fluid ">
+
+</div>
+
+
+<div class="container-fluid py-3 px-5 row justify-content-start">
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden"></span>
+</div>
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden"></span>
+</div>
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden"></span>
+</div>
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden"></span>
+</div>
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden"></span>
+</div>
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden"></span>
+</div>
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden"></span>
+</div>
+<div class="spinner-grow text-dark" role="status">
+  <span class="visually-hidden"></span>
+</div>
+</div>
+
+
+<!--Footer Section Start-->
+
+  <footer>
+
+    <div class="" style="background-color: rgb(81, 78, 83);">
+      <div class="container">
+        <div class="row py-2">
+          <div class="col-md-3">
+            <h4 class="" style="color: rgb(192, 184, 197);">Extra Service</h4>
+            <ul><a href="#" class=" "><p style="color: rgb(146, 174, 190);">Online Class</p></a></ul>
+            <ul><a href="#" class=" "><p style="color: rgb(146, 174, 190);">Recoard Class</p></a></ul>
+            <ul><a href="#"class=" "><p style="color: rgb(146, 174, 190);">Online Payment</p></a></ul>
+            <ul><a href="#"class=" "><p style="color: rgb(146, 174, 190);">Online Payment</p></a></ul>
+
+          </div>
+          
+          <div class="col-md-3">
+            <h4 class="" style="color:  rgb(169, 240, 201);" >Extra Service</h4>
+            <ul><a href="#" class=" "><p style="color:rgb(130, 173, 132);">Online Class</p></a></ul>
+            <ul><a href="#" class=" "><p style="color: rgb(130, 173, 132);">Recoard Class</p></a></ul>
+            <ul><a href="#"class=" "><p style="color: rgb(130, 173, 132);">Online Payment</p></a></ul>
+            <ul><a href="#"class=" "><p style="color:rgb(130, 173, 132);">Online Payment</p></a></ul>
+
+          </div>
+          <div class="col-md-3">
+            <h4 class=""  style="color: rgb(192, 184, 197);">Extra Service</h4>
+            <ul><a href="#" class=" "><p style="color: rgb(146, 174, 190);">Online Class</p></a></ul>
+            <ul><a href="#" class=" "><p style="color: rgb(146, 174, 190);">Recoard Class</p></a></ul>
+            <ul><a href="#"class=""><p style="color: rgb(146, 174, 190);">Online Payment</p></a></ul>
+            <ul><a href="#"class=""><p style="color: rgb(146, 174, 190);">Online Payment</p></a></ul>
+
+          </div>
+          <div class="col-md-3 ">
+            <div class=""><img src="assets/img/image/img/h.png" alt="" style="height: 30px;width: 30px;border-radius: 50%;"><p style="color: rgb(138, 163, 233);">Dhaka, Mirpur-2</p></div>
+            <div class=""><img src="assets/img/image/img/e.png" alt="" style="height: 30px;width: 30px;border-radius: 50%;"><p style="color: rgb(138, 163, 233);">pulock@gmail.com</p></div>
+            <div class=""><img src="assets/img/image/img/p.png" alt="" style="height: 30px;width: 30px;border-radius: 50%;"><p style="color: rgb(138, 163, 233);">+8801784151488</p></div>
+            <div class=""><img src="assets/img/image/img/t.png" alt="" style="height: 30px;width: 30px;border-radius: 50%;"><p style="color: rgb(138, 163, 233);">07:00 PM TO 09:00 PM</p></div>
+            
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="" style="background-color: rgb(38, 39, 38);">
+      <div class="container">
+        <div class="row py-2 d-flex ">
+          <div class="col-md-12 text-center px-5">
+            <a class="px-5"  href="calculator.html"><i><img src="assets/img/image/img/calculator.png" height="40"width="40"/></i></a>
+            <a class="px-5" href="https://www.facebook.com/mrkpulock25/"><i><img src="assets/img/image/img/fb.png" height="40"width="40"/></i></a>
+            <a class="px-5" href="https://www.youtube.com/watch?v=rzCkdSMD2u0"><i><img src="assets/img/image/img/gl.png" height="40"width="40"/></i></a>
+            <a class="px-5" href="https://www.linkedin.com/in/mushahadur-rahaman-khan-b6b4b61a4/"><i ><img src="assets/img/image/img/in.png" height="40"width="40"/></i></a>
+            <a class="px-5" href="https://github.com/mushahadur?tab=repositories"><i ><img src="assets/img/image/img/tw.png" height="40"width="40"/></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+
+
+<!--Footer Section End-->
+
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+	<script  src="assets/js/formvalidation.js"></script>
+	<script src="assets/js/CalculatorJs/script.js"> </script
+	
+  
+</body>
+</html>
+	
+        

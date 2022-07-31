@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SignUp</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/boostrap.min.css"/>
+    <style>
+        .h-500{height:450px;
+        width:100%}
+        .ah-500{height:650px;
+        width:100%}
+        .my-caption{
+            background-color: rgba(0, 0, 0, 0.5);
+            bottom: 100px;
+        }
+
+        .min-h-300{
+            min-height: 300px;
+        }       
+
+  </style>
+</head>
+<body>
+<section class="py-2" style="background-color: rgb(199, 191, 204);  background-image: url(assets/img/image/img/td.png);">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 ">
+					<div class="row">
+						<div class="col-md-2 text-center">
+							<a href="#"><i class="px-4"><img src="assets/img/image/img/2.png" style="height: 130px;width: 130px;border-radius: 50%;padding: 5px;"/></i></a>
+						</div>
+						<div class="col-md-6 text-center">
+							<h1  style="color: rgba(255, 255, 255, 0.973); font-size: 50px;">Ideal Coaching Center</h1>
+						</div>
+						<div class="col-md-4 text-center  text-white">					
+							<a href="#"><i class=""><img src="assets/img/image/img/w.png" height="46"width="54" style="padding-left: 5px;"/></i></a>+990147845
+						</div>
+					</div>
+			</div>
+			
+		</div>
+			
+	</section>
+    
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ml-0" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item "><a class="nav-link" href="index.html">Home </a></li>
+                    <li class="nav-item "><a class="nav-link" href="about.html">About </a></li>
+                    <li class="nav-item "><a class="nav-link" href="contact.html">Contact </a></li>
+                    <li class="nav-item "><a class="nav-link" href="login.html">Login </a></li>
+                    <li class="nav-item "><a class="nav-link" href="signup.html">Sign Up </a></li>
+					<li class="nav-item "><a class="nav-link" href="registration.html">Registration </a></li>
+            </ul>
+            <form class="form-inline ml-5 my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+	
+	
+	
+	<!--Main Section Start-->
+	
+
+
+       <div class="section"  style="background-color:#d6ebeb;">
+            <div class="container py-5"  style="background-color:#d6ebeb;">
+                        <h2 class="text-center text-success py-2">
+                            <?php echo isset($message) ? $message : '';  ?>
+                        </h2>
+                <div class="row">
+                    <div class="col-4"></div>                  
+                    <div class="col-md-4">
+                    <h2 class="text-center py-3">Select to the Sign UP </h2>
+                        <div class="card">
+                            <div class="row py-3">
+                                <div class="col-6 py-3  px-5">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Student</button>
+                                </div>
+                                <div class="col-6 py-3 px-5">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Teacher</button>
+                                </div>
+                            </div>
+                            <div class="row py-3">
+                                <div class="col-6 py-3 px-5">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Perant</button>
+                                </div>
+                                <div class="col-6 py-3 px-5">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Admin</button>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+        </div>
+      
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <form action="action.php" method="POST" enctype="multipart/form-data">
+                                    <div class="row px-3">
+                                        <div class="form-group row">
+                                            <label class="col-form-label col-md-4">Name</label>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control" name="name" placeholder="Enter name"/>
+                                            </div>
+                                        </div><br><br>
+
+                                        <div class="form-group row">
+                                            <label class="col-form-label col-md-4">Email</label>
+                                            <div class="col-md-8">
+                                                <input type="email" class="form-control" name="email" placeholder="Enter email"/>
+                                            </div>
+                                        </div><br><br>
+
+                                        <div class="form-group row">
+                                            <label class="col-form-label col-md-4">Password</label>
+                                            <div class="col-md-8">
+                                                <input type="password" class="form-control" name="password" placeholder="Enter password"/>
+                                            </div>
+                                        </div><br><br>
+                                
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="submit" name="signBtn" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                </div>
+  
+	
+		<!-- Main section End-->
+
+
+<!--Footer Section End-->
+
+
+
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    
+</body>
+</html>

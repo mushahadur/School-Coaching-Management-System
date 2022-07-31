@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/boostrap.min.css"/>
+    <style>
+        .h-500{height:450px;
+        width:100%}
+        .ah-500{height:650px;
+        width:100%}
+        .my-caption{
+            background-color: rgba(0, 0, 0, 0.5);
+            bottom: 100px;
+        }
+
+        .min-h-300{
+            min-height: 300px;
+        }       
+
+  </style>
+</head>
+<body>
+<section class="py-2" style="background-color: rgb(199, 191, 204);  background-image: url(assets/img/image/img/td.png);">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 ">
+					<div class="row">
+						<div class="col-md-2 text-center">
+							<a href="#"><i class="px-4"><img src="assets/img/image/img/2.png" style="height: 130px;width: 130px;border-radius: 50%;padding: 5px;"/></i></a>
+						</div>
+						<div class="col-md-6 text-center">
+							<h1  style="color: rgba(255, 255, 255, 0.973); font-size: 50px;">Ideal Coaching Center</h1>
+						</div>
+						<div class="col-md-4 text-center  text-white">					
+							<a href="#"><i class=""><img src="assets/img/image/img/w.png" height="46"width="54" style="padding-left: 5px;"/></i></a>+990147845
+						</div>
+					</div>
+			</div>
+			
+		</div>
+			
+	</section>
+    
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ml-0" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item "><a class="nav-link" href="index.html">Home </a></li>
+                    <li class="nav-item "><a class="nav-link" href="about.html">About </a></li>
+                    <li class="nav-item "><a class="nav-link" href="contact.html">Contact </a></li>
+                    <li class="nav-item "><a class="nav-link" href="login.html">Login </a></li>
+                    <li class="nav-item "><a class="nav-link" href="signup.html">Sign Up </a></li>
+					<li class="nav-item "><a class="nav-link" href="registration.html">Registration </a></li>
+            </ul>
+            <form class="form-inline ml-5 my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+	
+	
+	<!--Main Section Start-->
+	
+	<div style="background-color: #678780;">
+<Section >
+    <div class="container py-3 mt-3">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card border-secondary  py-3">
+                    <div class="card-header text-center">
+                        <h1>I am Mushahadur<br><br>This is My Genaral Calculator with Watch</h1>
+                    </div>
+
+                    <div class="card-body">
+                        <h1 class="text-center text-danger">Watch</h1>
+                        <br/>
+                        <strong><h1 class="text-center" id = "watch"></h1> </strong>
+                    </div>
+
+                    <div class="card-footer ">
+                <h1 class="text-center">Basic Calculetor</h1>  <br>     
+                <table class="text-justify" >
+                    <tr>
+                        <th>First Number</th>
+                        <td>
+                            <input type="number" id="first_number">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Second Number</th>
+                        <td>
+                            <input type="number" id="second_number">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Result</th>
+                        <td>
+                            <input type="text" id="result">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Result</th>
+                        <td>
+                            <input type="button" id="plus_btn" onclick="my_calculator ('+')" value="+">
+                            <input type="button" id="minus_btn" value="-" onclick="my_calculator ('-')">
+                            <input type="button" id="multiplication_btn" value="*" onclick="my_calculator ('*')">
+                            <input type="button" id="division_btn" value="/" onclick="my_calculator ('/')">
+                            <input type="button" id="modulus_btn" value="%" onclick="my_calculator ('%')">
+                            <input type="button" id="reset_btn" value="reset">
+                        </td>
+                    </tr>
+                </table>  
+            </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+
+	
+	<!--Main Section End-->
+	
+	
+
+<!--Footer Section Start-->
+
+<div class="container-fluid ">
+
+</div>
+
+
+<div class="container-fluid py-3 px-5 row justify-content-start">
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden"></span>
+</div>
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden"></span>
+</div>
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden"></span>
+</div>
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden"></span>
+</div>
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden"></span>
+</div>
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden"></span>
+</div>
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden"></span>
+</div>
+<div class="spinner-grow text-dark" role="status">
+  <span class="visually-hidden"></span>
+</div>
+</div>
+
+
+<!--Footer Section Start-->
+
+  <footer>
+
+    <div class="" style="background-color: rgb(81, 78, 83);">
+      <div class="container">
+        <div class="row py-2">
+          <div class="col-md-3">
+            <h4 class="" style="color: rgb(192, 184, 197);">Extra Service</h4>
+            <ul><a href="#" class=" "><p style="color: rgb(146, 174, 190);">Online Class</p></a></ul>
+            <ul><a href="#" class=" "><p style="color: rgb(146, 174, 190);">Recoard Class</p></a></ul>
+            <ul><a href="#"class=" "><p style="color: rgb(146, 174, 190);">Online Payment</p></a></ul>
+            <ul><a href="#"class=" "><p style="color: rgb(146, 174, 190);">Online Payment</p></a></ul>
+
+          </div>
+          
+          <div class="col-md-3">
+            <h4 class="" style="color:  rgb(169, 240, 201);" >Extra Service</h4>
+            <ul><a href="#" class=" "><p style="color:rgb(130, 173, 132);">Online Class</p></a></ul>
+            <ul><a href="#" class=" "><p style="color: rgb(130, 173, 132);">Recoard Class</p></a></ul>
+            <ul><a href="#"class=" "><p style="color: rgb(130, 173, 132);">Online Payment</p></a></ul>
+            <ul><a href="#"class=" "><p style="color:rgb(130, 173, 132);">Online Payment</p></a></ul>
+
+          </div>
+          <div class="col-md-3">
+            <h4 class=""  style="color: rgb(192, 184, 197);">Extra Service</h4>
+            <ul><a href="#" class=" "><p style="color: rgb(146, 174, 190);">Online Class</p></a></ul>
+            <ul><a href="#" class=" "><p style="color: rgb(146, 174, 190);">Recoard Class</p></a></ul>
+            <ul><a href="#"class=""><p style="color: rgb(146, 174, 190);">Online Payment</p></a></ul>
+            <ul><a href="#"class=""><p style="color: rgb(146, 174, 190);">Online Payment</p></a></ul>
+
+          </div>
+          <div class="col-md-3 ">
+            <div class=""><img src="assets/img/image/img/h.png" alt="" style="height: 30px;width: 30px;border-radius: 50%;"><p style="color: rgb(138, 163, 233);">Dhaka, Mirpur-2</p></div>
+            <div class=""><img src="assets/img/image/img/e.png" alt="" style="height: 30px;width: 30px;border-radius: 50%;"><p style="color: rgb(138, 163, 233);">pulock@gmail.com</p></div>
+            <div class=""><img src="assets/img/image/img/p.png" alt="" style="height: 30px;width: 30px;border-radius: 50%;"><p style="color: rgb(138, 163, 233);">+8801784151488</p></div>
+            <div class=""><img src="assets/img/image/img/t.png" alt="" style="height: 30px;width: 30px;border-radius: 50%;"><p style="color: rgb(138, 163, 233);">07:00 PM TO 09:00 PM</p></div>
+            
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="" style="background-color: rgb(38, 39, 38);">
+      <div class="container">
+        <div class="row py-2 d-flex ">
+          <div class="col-md-12 text-center px-5">
+            <a class="px-5"  href="calculator.html"><i><img src="assets/img/image/img/calculator.png" height="40"width="40"/></i></a>
+            <a class="px-5" href="https://www.facebook.com/mrkpulock25/"><i><img src="assets/img/image/img/fb.png" height="40"width="40"/></i></a>
+            <a class="px-5" href="https://www.youtube.com/watch?v=rzCkdSMD2u0"><i><img src="assets/img/image/img/gl.png" height="40"width="40"/></i></a>
+            <a class="px-5" href="https://www.linkedin.com/in/mushahadur-rahaman-khan-b6b4b61a4/"><i ><img src="assets/img/image/img/in.png" height="40"width="40"/></i></a>
+            <a class="px-5" href="https://github.com/mushahadur?tab=repositories"><i ><img src="assets/img/image/img/tw.png" height="40"width="40"/></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+
+
+<!--Footer Section End-->
+
+
+    	<script src="assets/js/CalculatorJs/script.js"> </script>
+    	<script src="assets/js/jquery-3.6.0.min.js"></script>
+		<script src="assets/js/bootstrap.js"></script>
+    
+</body>
+</html>
+	
+        
